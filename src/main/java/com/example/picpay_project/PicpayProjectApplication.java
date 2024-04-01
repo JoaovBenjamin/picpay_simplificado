@@ -2,6 +2,8 @@ package com.example.picpay_project;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.Mapping;
 
 @SpringBootApplication
 public class PicpayProjectApplication {
@@ -10,4 +12,8 @@ public class PicpayProjectApplication {
 		SpringApplication.run(PicpayProjectApplication.class, args);
 	}
 
+
+	public String toString() {
+		return "abcde";
+	}
 }
