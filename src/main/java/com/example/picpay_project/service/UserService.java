@@ -25,7 +25,7 @@ public class UserService {
     }
 
     public User findUserById(long id) throws Exception{
-        return repository.findUserById(id)
+        return repository.findById(id)
                                     .orElseThrow(() ->new Exception("Usuario não encontrado"));
     }
 
@@ -38,5 +38,8 @@ public class UserService {
 
     public List<User> getAllUsers(){
         return repository.findAll();
+    }
+    public User saveUser(User newUser){
+        return repository.save(newUser);
     }
 }
